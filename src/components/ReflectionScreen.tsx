@@ -10,11 +10,11 @@ import {
   isElevatedConcern,
   needContent,
 } from '../data/checkinData'
-import type { CheckInAnswers } from '../types'
+import type { CompletedCheckIn } from '../types'
 import ActionVisual from './ActionVisual'
 
 interface ReflectionScreenProps {
-  answers: Required<CheckInAnswers>
+  answers: CompletedCheckIn
   onRestart: () => void
   onDone: () => void
 }

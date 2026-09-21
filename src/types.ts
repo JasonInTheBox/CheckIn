@@ -30,6 +30,12 @@ export interface CheckInAnswers {
   need: Need | null
 }
 
+export interface CompletedCheckIn {
+  feeling: Feeling
+  day: DayRating
+  need: Need
+}
+
 export interface Option<T extends string> {
   value: T
   label: string
